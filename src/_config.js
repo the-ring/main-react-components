@@ -8,7 +8,7 @@ const defaultConfig = {
   },
   backend: {
     url: 'http://localhost:3000',
-    connectUrl: 'http://localhost:3000/connect'
+    connectUrl: '/connect'
   },
   frontend: {
     port: 3001,

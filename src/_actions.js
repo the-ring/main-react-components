@@ -16,8 +16,8 @@ function checkStatus(response) {
 
 export function request(link,
   options = {},
-  endpoint = config.backend.url ||
-  window.localStorage.getItem('endpoint')) {
+  endpoint = window.localStorage.getItem('endpoint') ||
+  config.backend.url) {
   const userId = window.localStorage.getItem('user.id');
   const authToken = window.localStorage.getItem('user.authToken');
   return fetch(`${endpoint}/${link}`, {

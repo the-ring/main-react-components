@@ -22,7 +22,7 @@ export default class Connect extends Component {
     const state = window.btoa(`${userId}|${config.frontend.connectUrl}`);
     if (!this.props.google) {
       window.open(
-        `${config.backend.connectUrl}/google?state=${state}`,
+        `${config.backend.url}${config.backend.connectUrl}/google?state=${state}`,
         'connectGoogle',
         'width=800,height=600,scrollbars=yes'
       );
@@ -35,7 +35,7 @@ export default class Connect extends Component {
     const state = window.btoa(`${userId}|${config.frontend.connectUrl}`);
     if (!this.props.yandex) {
       window.open(
-        `${config.backend.connectUrl}/yandex?state=${state}`,
+        `${config.backend.url}${config.backend.connectUrl}/yandex?state=${state}`,
         'connectYandex',
         'width=800,height=600,scrollbars=yes'
       );

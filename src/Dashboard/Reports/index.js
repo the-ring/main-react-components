@@ -46,7 +46,7 @@ class Reports extends Component {
           link={link} period={period} type="reports"
         />
         <Sidebar path={path} showSettings={showModal} period={period} forceRefresh={this.refs} />
-        <section className="cards main__cards">
+        <section className="cards main__cards main__cards--reports">
           <Card
             ref="1" period={period} siteId={siteId} dataType="users"
             getData={this.getSiteUsers} size="sm" title="Users report"

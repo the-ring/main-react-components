@@ -57,7 +57,7 @@ class SiteView extends Component {
           type="site view"
         />
         <Sidebar path={path} showSettings={showModal} period={period} forceRefresh={this.refs} />
-        <section className="cards main__cards">
+        <section className="cards main__cards main__cards--sites-view">
           <Card
             ref="1" period={period} siteId={siteId} dataType="users"
             getData={this.getSiteUsers} size="md" title="Users"

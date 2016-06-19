@@ -95,7 +95,7 @@ class Sites extends Component {
           user={this.props.user} link={link} period={period}
         />
         <Sidebar path={path} showSettings={showModal} period={period} forceRefresh={this.refs} />
-        <section className="cards main__cards">
+        <section className="cards main__cards main__cards--sites">
           {(!c || !c.length) && <p>Nothing to see here</p>}
           {c}
         </section>

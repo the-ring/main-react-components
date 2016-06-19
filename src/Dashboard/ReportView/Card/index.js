@@ -3,7 +3,7 @@
 import React, { PropTypes, Component } from 'react';
 import { Link } from 'react-router';
 import equal from 'deep-equal';
-import Chart1 from '../../../_helpers/Chart';
+import Chart from '../../../_helpers/Chart';
 import Table from './Table';
 import Icon from '../../../_helpers/Icon';
 import Spinner from '../../../_helpers/Spinner';
@@ -155,11 +155,11 @@ export default class Card extends Component {
         </div>
         <div className="card__data-report">
           <form ref="form" method="post" action="https://demo-api.thering.co/report">
-            <div style={{ height: '421px' }}>
+            <div>
               {
                 this.state.fetching ?
                   <Spinner /> :
-                  <Chart1
+                  <Chart
                     ref="chart" width={this.sizes[this.getSize()]} height="400"
                     data={this.state.data} generateLegend={this.generateLegend}
                     destroyLegend={this.destroyLegend} hidden={this.props.hidden}

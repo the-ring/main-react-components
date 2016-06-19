@@ -115,7 +115,6 @@ Login.propTypes = {
   doLogin: PropTypes.func
 };
 
-
 function mapStateToProps(state) {
   return {
     login: { ...state.login }
