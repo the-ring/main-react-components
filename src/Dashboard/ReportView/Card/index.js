@@ -52,7 +52,7 @@ export default class Card extends Component {
     e.preventDefault();
     this.refs.table.refs.header.value = JSON.stringify(['Date', ['Google', 'Yandex', 'Median']]);
     this.refs.table.refs.data.value = JSON.stringify(this.refs.table.prepareData());
-    const newChart = new Chart(this.refs.hiddenChart, {
+    const newChart = new window.Chart(this.refs.hiddenChart, {
       type: this.props.chartType,
       data: this.refs.chart.prepareData(true),
       options: {
