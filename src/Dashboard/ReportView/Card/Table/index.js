@@ -28,7 +28,7 @@ export default class Table extends Component {
   render() {
     const { scrollable, header } = this.props;
     return (
-      <div className="table" style={{ maxHeight: 'calc(100vh - 420px - 70px - 50px - 40px)' }}>
+      <div className="table">
         <div className="table__head">
           <Row data={header} />
           <input ref="header" type="hidden" name="header" />
