@@ -10,7 +10,7 @@
 <h4 align="center">Main react components that is used in <a href="https://github.com/the-ring/frontend">frontend client</a> and <a href="https://github.com/the-ring/desktop">desktop app</a>.</h4>
 
 <p align="center">
-  <a href="https://github.com/the-ring/backend/main-react-components"><img src="https://img.shields.io/github/tag/the-ring/main-react-components.svg" alt="Release"></a>
+  <a href="https://github.com/the-ring/main-react-components"><img src="https://img.shields.io/github/tag/the-ring/main-react-components.svg" alt="Release"></a>
 </p>
 
 ## Install
